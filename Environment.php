@@ -207,6 +207,7 @@ class Environment
         $config = $this->getConfig();
 
         // Set attributes
+        $this->yiiDebug = $config['yiiDebug'];
         $this->yiiPath = $config['yiiPath'];
         $this->yiiEnv = isset($config['yiiEnv']) ? $config['yiiEnv'] : $this->mode;
 
